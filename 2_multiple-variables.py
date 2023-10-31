@@ -66,7 +66,7 @@ rhs = rhs_wrap(c)
 
 sol = scipy.integrate.solve_ivp(fun=rhs, t_span=[t_init,t_end], y0=y_init, method="RK45", t_eval=times, rtol=1e-5)
 
-# Use solution/3.1.1/api/_as_gen/matplotlib.pyplot.xlabel.html
+# Use solution
 times = sol.t
 y     = sol.y # y[other_index,time_index]
 
