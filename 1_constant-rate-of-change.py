@@ -46,4 +46,6 @@ times = sol.t
 y     = sol.y # y[other_index,time_index]
 
 plt.plot(times,y[0,:])
+plt.xlabel(r"$t$")
+plt.ylabel(r"$y$")
 plt.show()
