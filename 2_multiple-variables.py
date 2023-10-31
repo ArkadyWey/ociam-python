@@ -23,6 +23,7 @@ def rhs_wrap(c):
         i_gamma = 2
         i_delta = 3
 
+        # Make rhs
         dydt[i_a] = c[i_alpha]*numpy.cos(c[i_beta]*t)
         dydt[i_b] = c[i_gamma]*y[i_a] + c[i_delta]*t
         return dydt
